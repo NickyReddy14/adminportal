@@ -13,11 +13,11 @@ const Home = () => {
                     
                         <h1 >VJIT Placement Portal</h1>
                         <p >
-                            create a student profile and find your students positions in company
+                            Create a student profile and find your position in companies!
                         </p>
                         
                         
-                        <Link to='/login' className="btn btn-success">Admin SignIn</Link>
+                        <Link to='/login' className="btn btn-success">Admin Login</Link>
                     
                 </section>
                 

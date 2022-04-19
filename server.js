@@ -24,11 +24,11 @@ app.post('/compregister',async (req,res) =>{
         const { compname,email,description,eligibility,salary,lastdate,rounds,link } = req.body;
         const exist = await comps.findOne({email});
         if(exist){
-            return res.status(200).send('company already registered')
+            return res.status(200).send('Company has already been registered')
         }
         const existId = await comps.findOne({compname});
         if(existId){
-            return res.status(200).send('this collegeID already registered')
+            return res.status(200).send('This Hall Ticket has already been registered')
         }
         
 
@@ -36,7 +36,7 @@ app.post('/compregister',async (req,res) =>{
             compname,email,description,eligibility,salary,lastdate,rounds,link
         })
         newUser.save();
-        return res.status(200).send('company Registered Successfully')
+        return res.status(200).send('Company Registered Successfully')
     }
     catch(err){
         console.log(err)
@@ -50,10 +50,10 @@ app.post('/login',async (req,res)=>{
         const {email,password} = req.body;
         const exist = await users.findOne({email})
         if(!exist){
-            return res.status(200).send('User not Exist plz register')
+            return res.status(200).send('User does not exist please register')
         }
         if(exist.password !== password){
-            return res.status(200).send('password invalid')
+            return res.status(200).send('Password Invalid')
         }
         let payload = {
             user : {
@@ -68,7 +68,7 @@ app.post('/login',async (req,res)=>{
     }
     catch(err){
         console.log(err);
-        return res.status(500).send('login Server Error')
+        return res.status(500).send('Login Server Error')
     }
 })
 

@@ -9,17 +9,17 @@ const Header = () => {
             
             <li className="nav-link ">
                 <NavLink to="/dashboard" className="nav-link" style={({ isActive }) => ({ color: isActive ? 'orange' : 'white' })}>
-                    All company
+                    All Companies
                 </NavLink>
             </li>
             <li className="nav-link ">
                 <NavLink to="/addcompany" className="nav-link" style={({ isActive }) => ({ color: isActive ? 'orange' : 'white' })}>
-                    Add company
+                    Add a Company
                 </NavLink>
             </li>
             <li className="nav-link">
                 <NavLink to="/login" className="nav-link" onClick={()=>localStorage.clear()} style={({ isActive }) => ({ color: isActive ? 'orange' : 'white' })}>
-                    Logout
+                    Log Out
                 </NavLink>
             </li>
            

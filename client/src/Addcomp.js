@@ -48,17 +48,17 @@ const Addcomp = () => {
             <Header />
 
             <section className="container">
-                <h1 className="large " style={{"color":"orange","marginTop":"50px"}}>Register New Company</h1>
-                <p className="lead"><b> Create Account for company</b></p>
+                <h1 className="large " style={{"color":"orange","marginTop":"50px"}}>Register a New Company</h1>
+                {/* <p className="lead"><b> Create Account for company</b></p> */}<br></br>
                 <form onSubmit={submitHandler}>
                     <input style={{width:"41%"}} type="text"             placeholder="Name*"            onChange={changeHandler} value={compname} name="compname" /><br /><br />
                     <input style={{width:"41%"}} type="email"            placeholder="Email Address*"   onChange={changeHandler} value={email} name="email" /><br /><br />
-                    <input style={{width:"41%"}} type="text"             placeholder="description"          onChange={changeHandler} value={description} name="description" /><br /><br />
-                    <input style={{width:"41%"}} type="text"             placeholder="eligibility"          onChange={changeHandler} value={eligibility} name="eligibility" /><br /><br />
-                    <input style={{width:"41%"}} type="text"             placeholder="salary"        onChange={changeHandler} value={salary} name="salary" /><br /><br />
-                    <input style={{width:"41%"}} type="text"             placeholder="rounds*"            onChange={changeHandler} value={rounds} name="rounds" /><br /><br />
-                    <input style={{width:"41%"}} type="text"         placeholder="lastdate*"         onChange={changeHandler} value={lastdate} name="lastdate" /><br /><br />
-                    <input style={{width:"41%"}} type="text"             placeholder="link"        onChange={changeHandler} value={link} name="link" /><br /><br />
+                    <input style={{width:"41%"}} type="text"             placeholder="Description"      onChange={changeHandler} value={description} name="description" /><br /><br />
+                    <input style={{width:"41%"}} type="text"             placeholder="Eligibility"      onChange={changeHandler} value={eligibility} name="eligibility" /><br /><br />
+                    <input style={{width:"41%"}} type="text"             placeholder="Salary"           onChange={changeHandler} value={salary} name="salary" /><br /><br />
+                    <input style={{width:"41%"}} type="text"             placeholder="No. of Rounds*"          onChange={changeHandler} value={rounds} name="rounds" /><br /><br />
+                    <input style={{width:"41%"}} type="text"             placeholder="Last Date for Application*"        onChange={changeHandler} value={lastdate} name="lastdate" /><br /><br />
+                    <input style={{width:"41%"}} type="text"             placeholder="Company Website"             onChange={changeHandler} value={link} name="link" /><br /><br />
                     
 
                     <input type="submit" className="btn btn-primary" value="Register" />

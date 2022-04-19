@@ -19,7 +19,7 @@ const Login = () => {
             setAuth(true)
         }
         else{
-            alert("Enter valid Inputs")
+            alert("Enter Valid Inputs")
         }
     }
 
@@ -31,9 +31,9 @@ const Login = () => {
         <div>
             
         <nav className="navbar bg-dark justify-content-left">
-            <h1 style={{"marginLeft":"5px"}}>
-                <Link to='/'>Placement portal</Link>
-            </h1>
+            <h2 style={{"marginLeft":"15px"}}>
+                <Link to='/'>Placement Portal</Link>
+            </h2>
             <div className="justify-content-left" >
                 <h5 >
                    
@@ -47,9 +47,9 @@ const Login = () => {
                 <h1 className="large " style={{"color":"orange","marginTop":"100px"}} >Admin Sign In</h1>
                 <p className="lead"><b>Sign into Your Admin Account</b></p>
                 <form onSubmit={submitHandler}>
-                    <input className="form-control-lg m-1 border" style={{width:"40%"}} type="email"    placeholder="Enter email"    name="email" value={email}   onChange={changeHandler} /><br /><br />
-                    <input className="form-control-lg m-1 border" style={{width:"40%"}} type="password" placeholder="Enter password" name="password" value={password} onChange={changeHandler} /><br /><br />
-                    <input type="submit" className="btn btn-primary" value="login" />
+                    <input className="form-control-lg m-1 border" style={{width:"40%"}} type="email"    placeholder="Enter Mail ID"    name="email" value={email}   onChange={changeHandler} /><br /><br />
+                    <input className="form-control-lg m-1 border" style={{width:"40%"}} type="password" placeholder="Enter Password" name="password" value={password} onChange={changeHandler} /><br /><br />
+                    <input type="submit" className="btn btn-primary" value="Login" />
                 </form>
                 
             </section>
