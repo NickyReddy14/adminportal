@@ -14,7 +14,7 @@ const Login = () => {
     }
     const submitHandler = e =>{
         e.preventDefault();
-        if(email && password && email==="vjit@gmail.com" && password==="12"){
+        if(email && password && email==="vjit@gmail.com" && password==="123456"){
             localStorage.setItem('token',"12vjit");
             setAuth(true)
         }
